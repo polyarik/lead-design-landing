@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	@font-face {
+		font-family: "Roboto";
+		src: url("/assets/fonts/Roboto.ttf") format("truetype");
+	}
+
+	@font-face {
+		font-family: "Kiona";
+		src: url("/assets/fonts/Kiona.ttf") format("truetype");
+	}
+}
+
 :root {
 	--dark-red: #642022;
 	--standart-red: #ab0917;
@@ -28,3 +40,15 @@
 		var(--standart-red) 100%
 	);
 }
+
+/*example*/
+/*@layer components {
+	.card {
+		background-color: theme("colors.white");
+		border-radius: theme("borderRadius.lg");
+		padding: theme("spacing.6");
+		box-shadow: theme("boxShadow.xl");
+	}
+
+	.btn ...
+}*/
