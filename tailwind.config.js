@@ -4,22 +4,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "dark-red": "#642022",
-        "standart-red": "#ab0917",
-        "red": "#e5010a",
+        "dark-red": "var(--dark-red)",
+        "standart-red": "var(--standart-red)",
+        "red": "var(--red)",
 
-        "sec-black": "#2b2a29",
-        "sec-purple": "#b18f91",
-        "sec-white": "#fefefe",
+        "sec-black": "var(--sec-black)",
+        "sec-purple": "var(--sec-purple)",
+        "sec-white": "var(--sec-white)",
 
         /*where is gray-1 ???*/
-        "gray-2": "#4f4f4f",
-        "gray-3": "#828282",
-        "gray-4": "#bdbdbd",
+        "gray-2": "var(--gray-2)",
+        "gray-3": "var(--gray-3)",
+        "gray-4": "var(--gray-4)",
 
-        "black": "#000000",
-        "black-2": "#101010",
-        "black-3": "#191919",
+        "black": "var(--black)",
+        "black-2": "var(--black-2)",
+        "black-3": "var(--black-3)",  
       },
     },
   },
