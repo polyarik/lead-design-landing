@@ -2,4 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* custom styles */
+:root {
+	/*isn't used ???*/
+	--red-gradient: linear-gradient(
+		180deg,
+		var(--dark-red) 0%,
+		var(--red) 49.79%,
+		var(--standart-red) 100%
+	);
+}
