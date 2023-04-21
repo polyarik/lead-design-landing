@@ -14,6 +14,34 @@
 	}
 }
 
+@layer components {
+	.header {
+		@apply text-[90px] font-bold leading-[108px];
+	}
+
+	.subheader {
+		@apply text-[64px] font-bold leading-[77px];
+	}
+
+	/*todo: define different font styles*/
+
+	.accent-line {
+		@apply w-[80px] h-[3px] bg-standart-red;
+	}
+
+	.btn {
+	}
+
+	.svg-icon {
+		@apply fill-none stroke-[3px];
+		stroke-linejoin: "round";
+	}
+
+	.svg-icon path {
+		vector-effect: non-scaling-stroke;
+	}
+}
+
 :root {
 	--dark-red: #642022;
 	--standart-red: #ab0917;
@@ -40,15 +68,3 @@
 		var(--standart-red) 100%
 	);
 }
-
-/*example*/
-/*@layer components {
-	.card {
-		background-color: theme("colors.white");
-		border-radius: theme("borderRadius.lg");
-		padding: theme("spacing.6");
-		box-shadow: theme("boxShadow.xl");
-	}
-
-	.btn ...
-}*/

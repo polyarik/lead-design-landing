@@ -1,15 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth" lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Lead Design</title>
 
+		<title>Lead Design</title>
 		<link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
+
 		<link href="/dist/output.css" rel="stylesheet" />
 	</head>
-	<body>
-		<div class="text-3xl font-kiona bg-dark-red">Lead Design</div>
-		<div class="font-roboto">Фирма</div>
+
+	<body class="flex flex-col bg-black-2 font-roboto text-sec-white">
+		<header class="flex flex-row flex-nowrap justify-between">
+			<img src="/assets/icons/logo.svg" alt="Logo" />
+			<nav class="flex">
+				<ul class="flex flex-row flex-nowrap">
+					<li>
+						<a href="#">Главная</a>
+						<div class="accent-line w-[50px]"></div>
+					</li>
+					<li><a href="#services">Услуги</a></li>
+					<li><a href="#branches">Отрасли</a></li>
+					<li><a href="#portfolio">Портфолио</a></li>
+					<li><a href="#blog">Блог</a></li>
+					<li><a href="#contact-us">Контакты</a></li>
+				</ul>
+
+				<img src="/assets/icons/search.svg" alt="Search" />
+
+				<!-- <form action="#" method="GET">
+					<input type="text" placeholder="Search..." />
+					<button type="submit">
+						<img src="/assets/icons/search.svg" alt="Search" />
+					</button>
+				</form> -->
+			</nav>
+		</header>
+
+		<main>
+			<!-- bg img person -->
+			<section class="bg-black">
+				<div class="flex flex-col items-start justify-between gap-[80px]">
+					<div class="accent-line"></div>
+					<h1 class="header">
+						Мы маркетинговое агенство
+						<span class="font-kiona">Lead Design</span>.
+					</h1>
+					<button class="btn">Сотрудничать</button>
+				</div>
+				<ul class="flex flex-row justify-between">
+					<li class="flex flex-col bg-dark-red">
+						<!-- <img
+							src="/assets/icons/image.svg"
+							class="w-[80px] h-[80px] stroke-[3px] stroke-sec-white"
+						/> -->
+						<svg
+							class="svg-icon w-[80px] h-[80px] stroke-sec-white"
+							viewBox="0 0 15 15"
+						>
+							<path
+								d="M.5 10.5h14m-14-3 4-4 7 7M1.5.5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-12a1 1 0 0 1-1-1v-12a1 1 0 0 1 1-1Zm9 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
+							/>
+						</svg>
+						<div>
+							<div>
+								<div><span class="font-kiona">UI</span> Дизайн</div>
+								<div class="accent-line bg-sec-white"></div>
+							</div>
+							<div>
+								Картельные сговоры не допускают ситуации, при которой тщательные
+								исследования конкурентов неоднозначны и будут указаны как
+								претенденты на роль ключевых факторов.
+							</div>
+						</div>
+					</li>
+					<li class="flex flex-col bg-black-3">
+						<img
+							src="/assets/icons/computer.svg"
+							class="w-[80px] h-[80px] stroke-[3px] stroke-standart-red"
+						/>
+						<div>
+							<div>
+								<div><span class="font-kiona">UX</span> Дизайн</div>
+								<div class="accent-line bg-sec-white"></div>
+							</div>
+							<div>
+								Картельные сговоры не допускают ситуации, при которой тщательные
+								исследования конкурентов неоднозначны и будут указаны как
+								претенденты на роль ключевых факторов.
+							</div>
+						</div>
+					</li>
+					<li class="flex flex-col bg-black-3">
+						<img
+							src="/assets/icons/trophy.svg"
+							class="w-[80px] h-[80px] stroke-[3px] stroke-standart-red"
+						/>
+						<div>
+							<div>
+								<div>Брендинг</div>
+								<div class="accent-line bg-sec-white"></div>
+							</div>
+							<div>
+								Картельные сговоры не допускают ситуации, при которой тщательные
+								исследования конкурентов неоднозначны и будут указаны как
+								претенденты на роль ключевых факторов.
+							</div>
+						</div>
+						<!-- todo: accent rect bg-standart-red -->
+					</li>
+				</ul>
+			</section>
+			<!-- todo: red line after each section -->
+
+			<section id="services">
+				<!--  -->
+				<h2 class="subheader">Услуги</h2>
+				<!--  -->
+			</section>
+
+			<section id="portfolio">
+				<!--  -->
+				<h2 class="subheader">Портфолио</h2>
+				<!--  -->
+			</section>
+
+			<section>
+				<!--  -->
+				<h2 class="subheader">О Нас</h2>
+				<!--  -->
+			</section>
+
+			<section id="services">
+				<!--  -->
+				<h2 class="subheader">Что Говорят Наши Клиенты</h2>
+				<!--  -->
+			</section>
+
+			<section id="blog">
+				<!--  -->
+				<h2 class="subheader">Последние Новости</h2>
+				<!--  -->
+			</section>
+
+			<section id="contact-us">
+				<h2>Оставить Заявку</h2>
+				<p>Давайте знакомиться</p>
+				<!-- <form>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" /><br />
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" /><br />
+
+					<label for="message">Message:</label>
+					<textarea id="message" name="message"></textarea><br />
+
+					<input type="submit" value="Send" />
+				</form> -->
+			</section>
+		</main>
+
+		<footer class="grid">
+			<!--  -->
+
+			<a href="#" class="">
+				<img src="/assets/icons/arrow-up-circle.svg" alt="Return to Start" />
+			</a>
+
+			<div class="flex flex-row flex-wrap">
+				<!-- temp -->
+				<p>
+					2023 | Lead Design компания зарегестрирована в России | Политика
+					конфиденциальности | Карта
+				</p>
+
+				<p>Связаться с нами | Координаты</p>
+			</div>
+		</footer>
 	</body>
 </html>
