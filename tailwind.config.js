@@ -1,7 +1,7 @@
 import defaultTheme from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
-export const content = ["./src/**/*.{html,js}"];
+export const content = ["./src/**/*.{html,js}", "./assets/icons/*.html"];
 export const theme = {
 	colors: {
 		"dark-red": "var(--dark-red)",

@@ -33,12 +33,26 @@
 	}
 
 	.svg-icon {
-		@apply fill-none stroke-[3px];
-		stroke-linejoin: "round";
+		@apply fill-none stroke-[2px] stroke-sec-white;
+		stroke-linejoin: round;
 	}
 
-	.svg-icon path {
+	.svg-arrow {
+		@apply fill-none stroke-[2px] stroke-sec-purple;
+	}
+
+	.svg-arrow path {
+		stroke-linecap: round;
+	}
+
+	.svg-icon path,
+	.svg-arrow path {
 		vector-effect: non-scaling-stroke;
+		stroke-linejoin: round;
+	}
+
+	.svg-icon-logo {
+		@apply stroke-gray-3 w-[30px] h-[30px];
 	}
 }
 
